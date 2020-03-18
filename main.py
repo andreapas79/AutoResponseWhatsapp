@@ -5,7 +5,7 @@ import random
 driver = webdriver.Chrome()
 driver.get('https://web.whatsapp.com/')
 
-name = 'ContactName' #insert name of your contact
+name = 'Contact Name' #insert name of your contact
 msg = 'message1', 'message2', 'message3', 'message4', 'message5'
 
 input('Enter anything after scanning QR code')
@@ -23,7 +23,7 @@ while (i < 10):
         user.click()
 
         msg_box = driver.find_element_by_class_name('_13mgZ')
-        msg_box.send_keys("io sono qui a non fare nulla")
+        msg_box.send_keys("response message")
         button = driver.find_element_by_class_name('_3M-N-')
         button.click()
         i += 1
